@@ -45,7 +45,7 @@ if (a >= c)
 每一位数字乘以1e9^下标的和即为大整数本身，用a[i]表示大数a的每一位数字，则：
 <a href="https://www.codecogs.com/eqnedit.php?latex=a&space;=&space;\sum_{i}^{n}digit[i]*1e(9i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a&space;=&space;\sum_{i}^{n}digit[i]*1e(9i)" title="a = \sum_{i}^{n}digit[i]*1e(9i)" /></a>
 ## 乘法实现
-若用a[i]表示大数a的每一位数字，b[i]表示大数b的每一位数字，则易得：
+若用a[i]表示大数a的每一位数字，b[i]表示大数b的每一位数字，则易得：\n
 <a href="https://www.codecogs.com/eqnedit.php?latex=a*b=\sum_{i}\sum_{j}&space;a[i]&space;*&space;b[i]*1e(9(i&plus;j))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a*b=\sum_{i}\sum_{j}&space;a[i]&space;*&space;b[i]*1e(9(i&plus;j))" title="a*b=\sum_{i}\sum_{j} a[i] * b[i]*1e(9(i+j))" /></a>
 也就是先把a = 123,456,789看成a = 123 × 1e6 + 456 × 1e3 + 789
 然后一个O(n^2)级别的遍历相乘得到结果。
